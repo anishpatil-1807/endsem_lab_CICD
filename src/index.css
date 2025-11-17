@@ -1,5 +1,5 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -66,3 +66,45 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+/* index.css */
+
+/* Make sure everything fills the screen */
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* For the login/register background */
+.auth-container {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to right, #caf0f8, #90e0ef);
+  overflow: hidden;
+}
+
+/* Dashboard full grid */
+.dashboard-grid {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "sidebar content";
+  grid-template-columns: 250px 1fr;
+  grid-template-rows: 70px auto;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+/* Optional — smooth scroll or background */
+body {
+  background: #f7faff;
+  overflow: hidden;
+}
+
